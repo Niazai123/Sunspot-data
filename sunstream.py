@@ -5,7 +5,6 @@ import seaborn as sns
 import streamlit as st
 from scipy import signal
 from scipy.signal import welch
-import pywt
 import plotly.graph_objects as go
 from scipy.signal.windows import hann
 mydata = pd.read_csv('sunspot_data.csv')
