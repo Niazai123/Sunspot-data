@@ -8,6 +8,7 @@ from scipy.signal import welch
 import plotly.graph_objects as go
 from scipy.signal.windows import hann
 mydata = pd.read_csv('sunspot_data.csv')
+mydata.drop(columns='Unnamed: 0')
 st.title('Sunspot Data Analysis')
 st.write('This Streamlit app allows you to explore sunspot data.')
 st.header('Sunspot Data set')
